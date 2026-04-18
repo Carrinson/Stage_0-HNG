@@ -46,7 +46,7 @@ async def classify(name: str):
             if gender is None or sample_size <= 0:
                 raise HTTPException(status_code=404, detail="No prediction available for the provided name")
             is_confident = probability >= 0.7 and sample_size>= 100
-            processed_at = datetime.now(timezone.utc).isoformat()
+            processed_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
             return {
                 "status": "success",
