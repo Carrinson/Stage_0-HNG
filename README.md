@@ -10,7 +10,7 @@ A REST API built with FastAPI that predicts gender from a name using the Genderi
 ## Running Locally
 
 1. Clone the repository
-   git clone <your-repo-url>
+   git clone https://github.com/Carrinson/Stage_0-HNG.git
 
 2. Install dependencies
    uv pip install -r requirements.txt
@@ -38,4 +38,4 @@ Response:
 }
 
 ## Live API
-<your-deployment-url>
+https://stage0-hng-production.up.railway.app/
